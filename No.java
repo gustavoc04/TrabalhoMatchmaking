@@ -4,6 +4,7 @@ public class No {
     private String role;
     private int pontuacaoHabilidade;
     private No proximo;
+    private No anterior;
 
     public String getNome() {
         return nome;
@@ -25,6 +26,10 @@ public class No {
         return proximo;
     }
 
+    public No getAnterior() {
+        return anterior;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -43,5 +48,9 @@ public class No {
 
     public void setProximo(No proximo) {
         this.proximo = proximo;
+    }
+
+    public void setAnterior(No anterior) {
+        this.anterior = anterior;
     }
 }
