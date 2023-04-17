@@ -1,56 +1,37 @@
 public class No {
-    private String nome;
-    private int id;
-    private String role;
-    private int pontuacaoHabilidade;
-    private No proximo;
+    private Jogador jogador;
     private No anterior;
+    private No proximo;
 
-    public String getNome() {
-        return nome;
+    public No(Jogador jogador) {
+        this.jogador = jogador;
+        this.anterior = null;
+        this.proximo = null;
     }
 
-    public int getId() {
-        return id;
+    public Jogador getJogador() {
+        return jogador;
     }
 
-    public String getRole() {
-        return role;
-    }
-
-    public int getPontuacaoHabilidade() {
-        return pontuacaoHabilidade;
-    }
-
-    public No getProximo() {
-        return proximo;
+    public void setJogador(Jogador jogador) {
+        this.jogador = jogador;
     }
 
     public No getAnterior() {
         return anterior;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setAnterior(No anterior) {
+        this.anterior = anterior;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public void setPontuacaoHabilidade(int pontuacaoHabilidade) {
-        this.pontuacaoHabilidade = pontuacaoHabilidade;
+    public No getProximo() {
+        return proximo;
     }
 
     public void setProximo(No proximo) {
         this.proximo = proximo;
     }
 
-    public void setAnterior(No anterior) {
-        this.anterior = anterior;
-    }
+    // outros getters e setters que você possa precisar
 }
